@@ -56,7 +56,6 @@ cmake -LAH                                                                \
     -DCMAKE_BUILD_TYPE="Release"                                          \
     -DCMAKE_INSTALL_PREFIX=${PREFIX}                                      \
     -DCMAKE_PREFIX_PATH=${PREFIX}                                         \
-    $OPENMP                                                               \
     -DOpenBLAS=1                                                          \
     -DOpenBLAS_INCLUDE_DIR=$PREFIX/include                                \
     -DOpenBLAS_LIB=$PREFIX/lib/libopenblas$SHLIB_EXT                      \
@@ -86,6 +85,7 @@ cmake -LAH                                                                \
     -DPYTHON_EXECUTABLE=${PYTHON}                                         \
     -DPYTHON_INCLUDE_DIR=${INC_PYTHON}                                    \
     -DPYTHON_LIBRARY=${LIB_PYTHON}                                        \
+    -DWITH_TBB=ON                                                         \
     $PYTHON_SET_FLAG                                                      \
     $PYTHON_SET_EXE                                                       \
     $PYTHON_SET_INC                                                       \
