@@ -1,3 +1,18 @@
+Aim of this fork
+============
+This repository is a fork from https://github.com/conda-forge/opencv-feedstock
+
+The aim is to modify the opencv recipe to use intel tbb instead of multiprocessing. Multiprocessing causes problems with opencv when running on parallel as explained in the following issue.  
+https://github.com/conda-forge/opencv-feedstock/issues/104#issuecomment-366571850
+
+The opencv package has been uploaded to the following conda channel.  
+https://anaconda.org/ironbar/opencv
+
+The only limitation is that intel tbb should be installed separately because there was a problem in opencv compilation. Hopefully on opencv 3.4 this problem will dissapear. Use the following command to install tbb.
+
+  sudo apt-get install libtbb-dev
+
+
 About opencv
 ============
 
