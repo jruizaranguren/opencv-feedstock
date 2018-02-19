@@ -10,8 +10,9 @@ https://anaconda.org/ironbar/opencv
 
 The only limitation is that intel tbb should be installed separately because there was a problem in opencv compilation. Hopefully on opencv 3.4 this problem will dissapear. Use the following command to install tbb.
 
+```
   sudo apt-get install libtbb-dev
-
+```
 
 About opencv
 ============
