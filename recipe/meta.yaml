@@ -1,4 +1,4 @@
-{% set version = "3.3.0" %}
+{% set version = "3.3.1-BG10-fix" %}
 {% set blas_variant = "openblas" %}
 
 package:
@@ -7,8 +7,8 @@ package:
 
 source:
   fn: opencv-{{ version }}.tar.gz
-  url: https://github.com/opencv/opencv/archive/{{ version }}.tar.gz
-  sha256: 8bb312b9d9fd17336dc1f8b3ac82f021ca50e2034afc866098866176d985adc6
+  url: https://github.com/jruizaranguren/opencv/archive/{{ version }}.tar.gz
+  sha256: 0594dde8ee92ec561cb5cfaa5aeb8add024cd9e564b1ae24ce08a4f706d06129
 
 build:
   number: 203
