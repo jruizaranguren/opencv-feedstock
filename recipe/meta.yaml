@@ -1,4 +1,4 @@
-{% set version = "3.3.1-BG10-fix" %}
+{% set version = "3.3.1.BG10.fix" %}
 {% set blas_variant = "openblas" %}
 
 package:
