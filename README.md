@@ -17,6 +17,13 @@ The only limitation is that intel tbb should be installed separately because the
   sudo apt-get install libtbb-dev
 ```
 
+How to build
+============
+
+```
+  conda-build recipe -c conda-forge
+``` 
+
 Caveats
 =======
 
