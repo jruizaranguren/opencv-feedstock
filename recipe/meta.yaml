@@ -8,7 +8,7 @@ package:
 source:
   fn: opencv-{{ version }}.tar.gz
   url: https://github.com/jruizaranguren/opencv/archive/{{ version }}.tar.gz
-  sha256: 0594dde8ee92ec561cb5cfaa5aeb8add024cd9e564b1ae24ce08a4f706d06129
+  sha256: d697a9261a7403a5d24d312dd88f38e57e780b01d7c154331c4924aa23b01725
 
 build:
   number: 203

@@ -16,7 +16,7 @@ if [ "${SHORT_OS_STR}" == "Darwin" ]; then
 fi
 
 curl -L -O "https://github.com/jruizaranguren/opencv/archive/$PKG_VERSION.tar.gz"
-test `openssl sha256 $PKG_VERSION.tar.gz | awk '{print $2}'` = "0594dde8ee92ec561cb5cfaa5aeb8add024cd9e564b1ae24ce08a4f706d06129"
+test `openssl sha256 $PKG_VERSION.tar.gz | awk '{print $2}'` = "d697a9261a7403a5d24d312dd88f38e57e780b01d7c154331c4924aa23b01725"
 tar -zxf $PKG_VERSION.tar.gz
 
 mkdir -p build
@@ -86,6 +86,7 @@ cmake -LAH                                                                \
     -DPYTHON_INCLUDE_DIR=${INC_PYTHON}                                    \
     -DPYTHON_LIBRARY=${LIB_PYTHON}                                        \
     -DWITH_TBB=ON                                                         \
+    -DWITH_LIBV4L=OFF                                                     \
     $PYTHON_SET_FLAG                                                      \
     $PYTHON_SET_EXE                                                       \
     $PYTHON_SET_INC                                                       \
